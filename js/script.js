@@ -12,17 +12,23 @@
 for(let i = 1; i <= 30; i++){
     console.log(i);
 
-    
-    if ( i % 3 === 0) {
-       risultato = "fizz";
-        console.log (risultato);
-    } if ( i % 5 === 0) {
+    if ((i % 3 === 0) && (i % 5 === 0)){ 
+        risultato = "fizzBuzz";
+        console.log (risultato); 
+   
+    } else if ( i % 5 === 0) {
         risultato = "buzz";
         console.log (risultato);
-    } 
-    // if ((i % 3 === 0) && (i % 5 === 0)); 
-    //     risultato = "fizzBuzz";
-        // console.log (risultato);
-};
+    } else if  ( i % 3 === 0) {
+        risultato = "fizz";
+         console.log (risultato);
+    } else{ 
+        risultato = "";
+    }
 
+
+        // Output
+        // const col = document.createElement ("div");
+        // col.classList.add("col")
+};
 
